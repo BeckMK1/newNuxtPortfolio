@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage></NuxtPage>
-    </NuxtLayout>
-  </div>
+    <div></div>
 </template>
 <script setup></script>
 <style lang="scss" scoped></style>

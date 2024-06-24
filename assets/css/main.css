@@ -1,0 +1,26 @@
+:root {
+  --ctaColor: hsl(286, 91%, 41%);
+  --fontSm: 0.75rem;
+  --fontMd: 1rem;
+  --fontLg: 1.5rem;
+  --fontXl: 2rem;
+  --heading1:3.5rem;
+  --heading2:3rem;
+  --heading3:2.5rem;
+  --spacingSm:0.5rem;
+  --spacingMd:1rem;
+  --spacingLg:1.5rem;
+  --spacingMd:2rem;
+  --radiusSm:0.5rem;
+  --radiusMd:1rem;
+  --radiusLg:1.5rem;
+  --radiusXl:2rem;
+  --radiusFull:100%;
+}
+:root body[dataTheme=dark] {
+  --primaryBg: hsl(0,0%,10%);
+  --secondaryBg: hsl(0,0%,20%);
+  --tertiaryBg: hsl(0,0%,30%);
+  --primaryTextColor:hsl(0,0%,100%);
+  --secondaryTextColor:hsl(0,0%,80%);
+}/*# sourceMappingURL=main.css.map */
