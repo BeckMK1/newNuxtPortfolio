@@ -5,5 +5,11 @@
     </NuxtLayout>
   </div>
 </template>
-<script setup></script>
+<script setup>
+  useHead({
+    bodyAttrs:{
+      dataTheme:"dark"
+    }
+  })
+</script>
 <style lang="scss" scoped></style>
