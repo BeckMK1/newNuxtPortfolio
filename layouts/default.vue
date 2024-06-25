@@ -42,6 +42,7 @@
         gap: 1rem;
         position: absolute;
         margin: var(--spacingSm);
+        z-index: 20;
         .menuBtn{
             background-color: hsl(0,0%,30%,0.5);
             backdrop-filter: blur(3px);
@@ -83,5 +84,6 @@
     .pageContent{
         background-color: var(--primaryBg);
         height: 100vh;
+        max-width: 100%;
     }
 </style> 
