@@ -20,7 +20,6 @@ const slides = ref([
         "Mongoose.js",
         "Pinia",
         "Fontawsome"
-
     ]
 
 },
