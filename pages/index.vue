@@ -7,9 +7,9 @@
 const slides = ref([
 {
     image: "/images/slides/testImage1.jpg",
-    githubLink:"",
-    webLink:"",
-    projectId:"",
+    githubLink:"#",
+    webLink:"#",
+    projectId:"#",
     title:"Placeholder",
     content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qua tu etiam inprudens utebare non numquam. Equidem, sed audistine modo de Carneade?",
     tech:[

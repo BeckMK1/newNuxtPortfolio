@@ -83,17 +83,17 @@ function prevSlide(){
         z-index: 0;
         height: 100%;
         width: 100%;
-        img{
-            &::before{
+        &::before{
                 content: "";
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 z-index: 1;
-                background-color: hsla(0,0%,0%,0.5);
+                background-color: hsla(0,0%,0%,0.6);
                 top:0;
                 left: 0;
             }
+        img{
             position: absolute;
             z-index: 0;
             width: 100%;
@@ -105,7 +105,12 @@ function prevSlide(){
             position: relative;
             z-index: 2;
             width: 80%;
-            margin: 10rem auto;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
             h3{
                 font-size: var(--fontXl);
             }
@@ -118,6 +123,24 @@ function prevSlide(){
                     padding: 0.25rem 1rem 0.33rem 1rem;
                     border-radius: var(--radiusMd);
                     background-color: var(--secondaryBg);
+                }
+            }
+        }
+        .links{
+            display: flex;
+            gap: 1rem;
+            .projectLink{
+                background-color: var(--secondaryBg);
+                padding: 1rem;
+                border-radius: var(--radiusFull);
+                transition: 250ms;
+                svg{
+                    font-size: 2rem;
+                    height: 36px;
+                    width: 36px;
+                }
+                &:hover{
+                    transform: scale(1.1);
                 }
             }
         }
