@@ -3,7 +3,7 @@
         <div class="sliderContainer">
             <div class="slider">
                 <div class="sliderBtn prevBtn" @click="prevSlide"><font-awesome-icon icon="fa-solid fa-chevron-left" /></div>
-                <div class="slide" v-show="currentSlide == index" v-for="(slide, index) in slides" >
+                <div class="slide" :style="currentSlide == index ? {opacity:1} : {opacity:0}" v-for="(slide, index) in slides" >
                     <img :src="slide.image">
                     <div class="slideContent">
                         <div class="textContent">
@@ -21,6 +21,7 @@
                     </div>
                 </div>
                 <div class="sliderBtn nextBtn" @click="nextSlide"><font-awesome-icon icon="fa-solid fa-chevron-right" /></div>
+                <a class="downBtn" href="#aboutMe"><font-awesome-icon icon="fa-solid fa-chevron-down" /></a>
             </div>
         </div>
     </div>
@@ -34,7 +35,7 @@ const props = defineProps({
 })
 const currentSlide = ref(0)
 function nextSlide(){
-    if(currentSlide.value <= props.slides.length){
+    if(currentSlide.value >= props.slides.length - 1){
         currentSlide.value = 0 
         return
     }
@@ -42,7 +43,7 @@ function nextSlide(){
 }
 function prevSlide(){
     if(currentSlide.value == 0){
-        currentSlide.value = props.slides.length
+        currentSlide.value = props.slides.length - 1
         return
     }
     currentSlide.value--
@@ -66,6 +67,9 @@ function prevSlide(){
         .sliderBtn{
             position: relative;
             z-index: 2;
+            opacity: 0;
+            transition: 250ms;
+            cursor: pointer;
             &.prevBtn{
                 margin-left: 3rem;
             }
@@ -75,6 +79,23 @@ function prevSlide(){
             svg{
                 color: white;
                 font-size: 2rem;
+            }
+        }
+        &:hover{
+            .sliderBtn{
+                opacity: 1;
+            }
+        }
+        .downBtn{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 3rem;
+            svg{
+                color: white;
+                font-size: 2rem;
+                opacity: 1;
+                animation: btnDown 1.25s ease-out infinite;
             }
         }
     }
@@ -100,6 +121,7 @@ function prevSlide(){
             height: 100vh;
             object-fit: cover;
             box-sizing: border-box;
+            transition: 500ms;
         }
         .slideContent{
             position: relative;
@@ -107,19 +129,24 @@ function prevSlide(){
             width: 80%;
             height: 100%;
             margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            display: grid;
+            grid-template-rows: 1fr 120px;
             box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(-2rem);
+            animation: contentFade 1s ease-out forwards;
             h3{
                 font-size: var(--fontXl);
             }
         }
         .textContent{
+            align-self: center;
+            margin-top: 120px;
             .techContainer{
                 display: flex;
                 gap: 0.5rem;
                 p{
+                    user-select: none;
                     padding: 0.25rem 1rem 0.33rem 1rem;
                     border-radius: var(--radiusMd);
                     background-color: var(--secondaryBg);
@@ -129,6 +156,8 @@ function prevSlide(){
         .links{
             display: flex;
             gap: 1rem;
+            align-self: flex-start;
+            justify-content: flex-end;
             .projectLink{
                 background-color: var(--secondaryBg);
                 padding: 1rem;
@@ -143,6 +172,26 @@ function prevSlide(){
                     transform: scale(1.1);
                 }
             }
+        }
+    }
+    @keyframes contentFade {
+        from{
+            opacity: 0;
+            transform: translateY(-2rem);
+        }
+        to{
+            opacity:1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes btnDown {
+        from{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to{
+            opacity: 0;
+            transform: translateY(1rem);
         }
     }
 </style>
