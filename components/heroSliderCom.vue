@@ -3,7 +3,7 @@
         <div class="sliderContainer">
             <div class="slider">
                 <div class="sliderBtn prevBtn" @click="prevSlide"><font-awesome-icon icon="fa-solid fa-chevron-left" /></div>
-                <div class="slide" :style="currentSlide == index ? {opacity:1} : {opacity:0}" v-for="(slide, index) in slides" >
+                <div class="slide" v-show="currentSlide == index" v-for="(slide, index) in slides" >
                     <img :src="slide.image">
                     <div class="slideContent">
                         <div class="textContent">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="sliderBtn nextBtn" @click="nextSlide"><font-awesome-icon icon="fa-solid fa-chevron-right" /></div>
-                <a class="downBtn" href="#aboutMe"><font-awesome-icon icon="fa-solid fa-chevron-down" /></a>
+                <a class="downBtn" href="#quickAboutMe"><font-awesome-icon icon="fa-solid fa-chevron-down" /></a>
             </div>
         </div>
     </div>
@@ -122,6 +122,8 @@ function prevSlide(){
             object-fit: cover;
             box-sizing: border-box;
             transition: 500ms;
+            opacity: 0;
+            animation: imageFade 500ms ease-in forwards;
         }
         .slideContent{
             position: relative;
@@ -134,7 +136,7 @@ function prevSlide(){
             box-sizing: border-box;
             opacity: 0;
             transform: translateY(-2rem);
-            animation: contentFade 1s ease-out forwards;
+            animation: contentFade 1s 600ms ease-out forwards;
             h3{
                 font-size: var(--fontXl);
             }
@@ -172,6 +174,14 @@ function prevSlide(){
                     transform: scale(1.1);
                 }
             }
+        }
+    }
+    @keyframes imageFade {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
         }
     }
     @keyframes contentFade {

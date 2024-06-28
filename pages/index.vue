@@ -1,9 +1,10 @@
 <template>
     <div>
         <HeroSliderCom :slides="slides"></HeroSliderCom>
-        <section id="aboutMe" class="mainPageContent"> 
+        <section id="quickAboutMe" class="mainPageContent"> 
             <h3>Placeholder title</h3>
             <p>sum dolor sit amet, consectetur adipiscing elit. Non autem hoc: igitur ne illud quidem. De quibus cupio scire quid sentias. Ita nemo beato beatior. Rationis enim perfectio est virtus; </p>
+            <NuxtLink class="linkBtn" to="/aboutMe">Next</NuxtLink>
         </section>
     </div>
 </template>

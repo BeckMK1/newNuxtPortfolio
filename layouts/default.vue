@@ -40,7 +40,7 @@
     header{
         display: flex;
         gap: 1rem;
-        position: absolute;
+        position: fixed;
         margin: var(--spacingSm);
         z-index: 20;
         .menuBtn{
@@ -77,13 +77,17 @@
                     &.router-link-active{
                         background-color: hsl(0,0%,10%,1);
                     }
+                    &:hover{
+                        background-color: hsl(0,0%,10%,1);
+                    }
                 }
             }
         }
     }
     .pageContent{
         background-color: var(--primaryBg);
-        height: 100vh;
+        min-height: 100vh;
         max-width: 100%;
+        padding-bottom: 2rem;
     }
 </style> 

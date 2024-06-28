@@ -56,4 +56,15 @@ a {
 .mainPageContent {
   width: var(--contentWidthLg);
   margin: 0 auto;
+}
+
+.linkBtn {
+  background-color: var(--tertiaryBg);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: var(--radiusSm);
+  transition: 250ms;
+  color: var(--primaryTextColor);
+}
+.linkBtn:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */
