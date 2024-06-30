@@ -16,7 +16,7 @@
                         <div class="links">
                             <a class="projectLink" v-if="slide.githubLink != ''" :href="slide.githubLink"><font-awesome-icon icon="fa-brands fa-github" /></a>
                             <a class="projectLink" v-if="slide.githubLink != ''" :href="slide.webLink"><font-awesome-icon icon="fa-solid fa-globe" /></a>
-                            <a class="projectLink" v-if="slide.githubLink != ''" :href="`projects#${slide.projectId}`"><font-awesome-icon icon="fa-solid fa-diagram-project" /></a>
+                            <div class="projectLink" v-if="slide.githubLink != ''" @click="goToProject(slide.projectId)"><font-awesome-icon icon="fa-solid fa-diagram-project" /></div>
                         </div>
                     </div>
                 </div>
@@ -27,6 +27,8 @@
     </div>
 </template>
 <script setup>
+import { useGlStore } from '../stores/glStore';
+const glStore = useGlStore()
 const props = defineProps({
     slides:{
         default:[{}],
@@ -34,6 +36,10 @@ const props = defineProps({
     }
 })
 const currentSlide = ref(0)
+function goToProject(project){
+    glStore.setCurrentProject(project)
+    navigateTo("/projects")
+}
 function nextSlide(){
     if(currentSlide.value >= props.slides.length - 1){
         currentSlide.value = 0 
