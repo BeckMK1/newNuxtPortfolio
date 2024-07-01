@@ -14,7 +14,15 @@
         <div class="pageContent">
             <slot></slot>
         </div>
-        <footer></footer>
+        <footer>
+            <img src="" alt="">
+            <div class="contactInfo">
+                <h4>Contact Info</h4>
+                <p>Mikkel Beck Knudsen</p>
+                <a href="mailto:mikkelbeckk@gmail.com"><font-awesome-icon icon="fa-solid fa-envelope" /></a>
+                <a href="#"><font-awesome-icon icon="fa-brands fa-github" /></a>
+            </div>
+        </footer>
     </div>
 </template>
 <script setup>
@@ -89,5 +97,15 @@
         min-height: 100vh;
         max-width: 100%;
         padding-bottom: 2rem;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        .contactInfo{
+            margin-right: 3rem;
+            p{
+                font-weight: bold;
+            }
+        }
     }
 </style> 

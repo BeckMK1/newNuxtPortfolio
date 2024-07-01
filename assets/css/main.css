@@ -67,4 +67,10 @@ a {
 }
 .linkBtn:hover {
   transform: scale(1.1);
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  color: var(--primaryTextColor);
 }/*# sourceMappingURL=main.css.map */

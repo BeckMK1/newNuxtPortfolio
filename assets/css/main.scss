@@ -69,3 +69,8 @@ a{
         transform: scale(1.1);
     }
 }
+input{
+    border: none;
+    background-color: transparent;
+    color:var(--primaryTextColor)
+}
