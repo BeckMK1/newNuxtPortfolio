@@ -1,6 +1,7 @@
 <template>
     <div>
         <header>
+            <TypeWriterCom></TypeWriterCom>
             <div class="menuBtn" @click="linksOpen = !linksOpen, openLinks()"><font-awesome-icon icon="fa-solid fa-bars" /></div>
             <nav :style="{width:`${linksWidth}px`}">
                 <div ref="links" class="links">
