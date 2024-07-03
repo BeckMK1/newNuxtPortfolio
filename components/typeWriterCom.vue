@@ -1,5 +1,5 @@
 <template>
-    <div>{{ currentWord.toString() }}</div>
+    <div>{{ currentWord.toString().replace(/,/g, "") }}</div>
 </template>
 <script setup>
 const words = ref([
@@ -14,27 +14,22 @@ const currentWord = ref([""])
 const isWriting = ref(false)
 const wordIndex = ref(0)
 function writeAnimation(){
-    if(isWriting.value == false){
-        let tepWord = [...words.value[currentIndex.value]]
-        const write = setInterval(() => {
-            currentWord.value.push(tepWord[wordIndex.value])
+       const tempWord = [...words.value[currentIndex.value]]
+       setTimeout(()=>{
+        currentWord.value = [""]
+        const write = setInterval(()=>{
+            currentWord.value.push(tempWord[wordIndex.value])
             wordIndex.value++
-            if(tepWord.length + 1 == wordIndex.value){
-                if(currentIndex.value == words.value.length + 1){
-                    currentIndex.value = 0
-                    return
-                }
+            if(wordIndex.value == tempWord.length + 1){
                 clearInterval(write)
-                if(currentIndex.value != words.value.length + 1){
-                    currentIndex.value++
-                    wordIndex.value = 0
-                    currentWord.value = [""]
-                    return
+                wordIndex.value = 0
+                currentIndex.value++
+                if(currentIndex.value == words.value.length){
+                    currentIndex.value = 0
                 }
             }
-        }, 250);
-    }
-    return
+        },250)
+    },2000)
 }
 onMounted(()=>{
     writeAnimation()
