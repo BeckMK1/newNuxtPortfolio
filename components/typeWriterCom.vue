@@ -1,13 +1,23 @@
 <template>
-    <div>{{ currentWord.toString().replace(/,/g, "") }}</div>
+    <div class="typeWriter">
+        <h1>Mikkel Beck Knudsen</h1>
+        <h2>{{ currentWord.toString().replace(/,/g, "") }}</h2>
+    </div>
 </template>
 <script setup>
 const words = ref([
-    "vue",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Vue",
+    "Nuxt",
     "SCSS",
     "MongoDB",
     "Node.js",
-    "express.js"
+    "Express.js",
+    "Mongoose.js",
+    "Umbarco",
+    "Drupal"
 ])
 const currentIndex = ref(0)
 const currentWord = ref([""])
@@ -28,7 +38,7 @@ function writeAnimation(){
                     currentIndex.value = 0
                 }
             }
-        },250)
+        },50)
     },2000)
 }
 onMounted(()=>{
@@ -41,5 +51,12 @@ watch(currentIndex, async (newValue, oldValue) =>{
 })
 </script>
 <style lang="scss" scoped>
-
+    .typeWriter{
+        font-size: var(--fontLg);
+        font-weight: bold;
+        position: absolute;
+        z-index: 2;
+        padding-top: 5rem;
+        padding-left: 0.5rem;
+    }
 </style>

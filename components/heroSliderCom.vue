@@ -1,8 +1,9 @@
 <template>
     <div class="heroSlider">
+        <TypeWriterCom></TypeWriterCom>
         <div class="sliderContainer">
             <div class="slider">
-                <div class="sliderBtn prevBtn" @click="prevSlide"><font-awesome-icon icon="fa-solid fa-chevron-left" /></div>
+                <div class="sliderBtn prevBtn" @click="prevSlide(), pauseSlider()"><font-awesome-icon icon="fa-solid fa-chevron-left" /></div>
                 <div class="slide" v-show="currentSlide == index" v-for="(slide, index) in slides" >
                     <img :src="slide.image">
                     <div class="slideContent">
@@ -14,13 +15,13 @@
                             </div>
                         </div>
                         <div class="links">
-                            <a class="projectLink" v-if="slide.githubLink != ''" :href="slide.githubLink"><font-awesome-icon icon="fa-brands fa-github" /></a>
-                            <a class="projectLink" v-if="slide.githubLink != ''" :href="slide.webLink"><font-awesome-icon icon="fa-solid fa-globe" /></a>
-                            <div class="projectLink" v-if="slide.githubLink != ''" @click="goToProject(slide.projectId)"><font-awesome-icon icon="fa-solid fa-diagram-project" /></div>
+                            <a class="projectLink" @mouseenter="isPause = true" @mouseleave="isPause = false" v-if="slide.githubLink != ''" :href="slide.githubLink"><font-awesome-icon icon="fa-brands fa-github" /></a>
+                            <a class="projectLink" @mouseenter="isPause = true"  @mouseleave="isPause = false" v-if="slide.githubLink != ''" :href="slide.webLink"><font-awesome-icon icon="fa-solid fa-globe" /></a>
+                            <div class="projectLink" @mouseenter="isPause = true" @mouseleave="isPause = false" v-if="slide.githubLink != ''" @click="goToProject(slide.projectId)"><font-awesome-icon icon="fa-solid fa-diagram-project" /></div>
                         </div>
                     </div>
                 </div>
-                <div class="sliderBtn nextBtn" @click="nextSlide"><font-awesome-icon icon="fa-solid fa-chevron-right" /></div>
+                <div class="sliderBtn nextBtn" @click="nextSlide(), pauseSlider()"><font-awesome-icon icon="fa-solid fa-chevron-right" /></div>
                 <a class="downBtn" href="#quickAboutMe"><font-awesome-icon icon="fa-solid fa-chevron-down" /></a>
             </div>
         </div>
@@ -36,9 +37,16 @@ const props = defineProps({
     }
 })
 const currentSlide = ref(0)
+const isPause = ref(false)
 function goToProject(project){
     glStore.setCurrentProject(project)
     navigateTo("/projects")
+}
+function pauseSlider(){
+    isPause.value = true
+    setTimeout(()=>{
+        isPause.value = false
+    }, 10000)
 }
 function nextSlide(){
     if(currentSlide.value >= props.slides.length - 1){
@@ -54,6 +62,23 @@ function prevSlide(){
     }
     currentSlide.value--
 }
+function autoPlay(){
+    if(isPause.value == true){
+        clearInterval(play)
+        return
+    }
+    const play = setInterval(()=>{
+        nextSlide()
+    },10000)
+}
+onMounted(()=>{
+    autoPlay()
+})
+watch(isPause, async (oldValue, newValue)=>{
+    if(newValue == false){
+        autoPlay()
+    }
+})
 </script>
 <style lang="scss" scoped>
     .heroSlider{

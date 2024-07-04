@@ -1,16 +1,17 @@
 <template>
     <div>
         <header>
-            <TypeWriterCom></TypeWriterCom>
-            <div class="menuBtn" @click="linksOpen = !linksOpen, openLinks()"><font-awesome-icon icon="fa-solid fa-bars" /></div>
-            <nav :style="{width:`${linksWidth}px`}">
-                <div ref="links" class="links">
-                    <NuxtLink  to="/">Home</NuxtLink>
-                    <NuxtLink  to="/aboutMe">About me</NuxtLink>
-                    <NuxtLink  to="/whatIknow">What I know</NuxtLink>
-                    <NuxtLink  to="/projects">Projects</NuxtLink>
-                </div>
-            </nav>
+            <div class="navigation">
+                <div class="menuBtn" @click="linksOpen = !linksOpen, openLinks()"><font-awesome-icon icon="fa-solid fa-bars" /></div>
+                <nav :style="{width:`${linksWidth}px`}">
+                    <div ref="links" class="links">
+                        <NuxtLink  to="/">Home</NuxtLink>
+                        <NuxtLink  to="/aboutMe">About me</NuxtLink>
+                        <NuxtLink  to="/whatIknow">What I know</NuxtLink>
+                        <NuxtLink  to="/projects">Projects</NuxtLink>
+                    </div>
+                </nav>
+            </div>
         </header>
         <div class="pageContent">
             <slot></slot>
@@ -52,11 +53,17 @@
         position: fixed;
         margin: var(--spacingSm);
         z-index: 20;
+        flex-direction: column;
+        .navigation{
+            display: flex;
+            gap:1rem;
+        }
         .menuBtn{
             background-color: hsl(0,0%,30%,0.5);
             backdrop-filter: blur(3px);
             border-radius: var(--radiusSm);
             padding: 1.25rem;
+            width: fit-content;
             svg{
                 font-size: var(--fontLg);
                 color: white;
@@ -101,11 +108,22 @@
     }
     footer{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        margin-top: 3rem;
+        background-color: var(--tertiaryBg);
+        padding: 1rem 0;
         .contactInfo{
             margin-right: 3rem;
             p{
                 font-weight: bold;
+            }
+            a{
+                &:nth-child(3){
+                    margin-right: 0.5rem;
+                }
+                svg{
+                    font-size: var(--fontLg);
+                }
             }
         }
     }
