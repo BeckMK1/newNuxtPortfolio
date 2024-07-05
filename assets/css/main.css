@@ -59,11 +59,14 @@ a {
 }
 
 .linkBtn {
+  display: block;
   background-color: var(--tertiaryBg);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: var(--radiusSm);
   transition: 250ms;
   color: var(--primaryTextColor);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .linkBtn:hover {
   transform: scale(1.1);

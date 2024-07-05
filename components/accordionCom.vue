@@ -33,13 +33,16 @@ onMounted(()=>{
 <style lang="scss" scoped>
     .accordionSpoiler{
         background-color: var(--secondaryBg);
-        padding: 1rem 1.5rem;
+        padding: 1.5rem 1.5rem;
         border-radius: var(--radiusLg);
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
         z-index: 2;
+        h3{
+            margin-bottom: 0;
+        }
         &.open{
             svg{
                 transform: rotate(90deg);
@@ -59,7 +62,7 @@ onMounted(()=>{
         border-bottom-right-radius: var(--radiusLg);
         &-inner{
             box-sizing: border-box;
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             padding-top: 2rem;
         }
     }

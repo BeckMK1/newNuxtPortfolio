@@ -108,12 +108,12 @@
     }
     footer{
         display: flex;
-        justify-content: center;
+        justify-content: start;
         margin-top: 3rem;
         background-color: var(--tertiaryBg);
         padding: 1rem 0;
         .contactInfo{
-            margin-right: 3rem;
+            margin-left: 1rem;
             p{
                 font-weight: bold;
             }
@@ -123,6 +123,13 @@
                 }
                 svg{
                     font-size: var(--fontLg);
+                    transition: 250ms;
+                }
+                &:hover{
+                    svg{
+                        transform: scale(1.05);
+                        color:white;
+                    }
                 }
             }
         }
