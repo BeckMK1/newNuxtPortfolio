@@ -159,15 +159,18 @@ watch(isPause, async (oldValue, newValue)=>{
         .slideContent{
             position: relative;
             z-index: 2;
-            width: 80%;
             height: 100%;
-            margin: 0 auto;
+            margin: 0 15px;
             display: grid;
             grid-template-rows: 1fr 120px;
             box-sizing: border-box;
             opacity: 0;
             transform: translateY(-2rem);
             animation: contentFade 1s 600ms ease-out forwards;
+            @media(min-width:576px){
+                margin: 0 auto;
+                width: 80%;
+            }
             h3{
                 font-size: var(--fontXl);
             }
@@ -177,6 +180,7 @@ watch(isPause, async (oldValue, newValue)=>{
             margin-top: 120px;
             .techContainer{
                 display: flex;
+                flex-wrap: wrap;
                 gap: 0.5rem;
                 p{
                     user-select: none;

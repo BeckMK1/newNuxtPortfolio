@@ -48,5 +48,8 @@ const slides = ref([
 <style lang="scss" scoped>
     .mainPageContent{
         margin-top: 3rem;
+        p{
+            width: 100%;
+        }
     }
 </style>

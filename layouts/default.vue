@@ -57,6 +57,10 @@
         .navigation{
             display: flex;
             gap:1rem;
+            flex-direction: column;
+            @media(min-width:567px){
+                flex-direction: row;
+            }
         }
         .menuBtn{
             background-color: hsl(0,0%,30%,0.5);
@@ -64,6 +68,7 @@
             border-radius: var(--radiusSm);
             padding: 1.25rem;
             width: fit-content;
+            height: fit-content;
             svg{
                 font-size: var(--fontLg);
                 color: white;
@@ -82,6 +87,10 @@
                 display: flex;
                 gap: 1rem;
                 padding: 0.75rem;
+                flex-direction: column;
+                @media(min-width:567px){
+                    flex-direction: row;
+                }
                 a{
                     white-space: nowrap;
                     font-size: var(--fontMd);
