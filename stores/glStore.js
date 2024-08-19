@@ -3,12 +3,12 @@ export const useGlStore = defineStore('glStore', {
         currentProject: '',
         projects:[
             {
-                title:'Placeholder 1',
-                id:"placeholder1"
+                title:'Pre Lobby',
+                id:"PreLobby"
             },
             {
-                title:'Placeholder 2',
-                id:"placeholder2"
+                title:'Design Architects',
+                id:"DesignArchitects"
             }
         ],
         filteredProjects:[]
