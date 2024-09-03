@@ -8,6 +8,22 @@
         <div class="cardsContainer">
             <CardCom v-for="card in glStore.cards" v-show="card.type == 'language'" :title="card.title" :image="card.image" :front-content="card.frontContent" :back-content="card.backContent"></CardCom>
         </div>
+        <h2>libraries/plugins</h2>
+        <div class="cardsContainer">
+            <CardCom v-for="card in glStore.cards" v-show="card.type == 'libary/plugins'" :title="card.title" :image="card.image" :front-content="card.frontContent" :back-content="card.backContent"></CardCom>
+        </div>
+        <h2>CMS</h2>
+        <div class="cardsContainer">
+            <CardCom v-for="card in glStore.cards" v-show="card.type == 'CMS'" :title="card.title" :image="card.image" :front-content="card.frontContent" :back-content="card.backContent"></CardCom>
+        </div>
+        <h2>Programs</h2>
+        <div class="cardsContainer">
+            <CardCom v-for="card in glStore.cards" v-show="card.type == 'Programs'" :title="card.title" :image="card.image" :front-content="card.frontContent" :back-content="card.backContent"></CardCom>
+        </div>
+        <h2>Other</h2>
+        <div class="cardsContainer">
+            <CardCom v-for="card in glStore.cards" v-show="card.type == 'Other'" :title="card.title" :image="card.image" :front-content="card.frontContent" :back-content="card.backContent"></CardCom>
+        </div>
     </div>
 </template>
 <script setup>
@@ -26,6 +42,6 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 2rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 </style>

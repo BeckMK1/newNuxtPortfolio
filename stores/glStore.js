@@ -25,17 +25,122 @@ export const useGlStore = defineStore('glStore', {
             {
                 title:"Nuxt",
                 image:"/logos/NuxtWhite.png",
+                frontContent:"This is my framework of choice and I builds most of my projects in it",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"framework"
+            },
+            {
+                title:"HTML",
+                image:"/logos/HTML5.png",
+                frontContent:"Almost every project I make is a website so i have alot of expirance with HTML",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"language"
+            },
+            {
+                title:"CSS",
+                image:"/logos/CSS3.png",
+                frontContent:"I have used CSS for many years now, from my own projects to other peoples codebases",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"language"
+            },
+            {
+                title:"Sass",
+                image:"/logos/SASS.png",
+                frontContent:"I prefer SCSS over vanilla CSS and I use it for my on projects as well as for work",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"libary/plugins"
+            },
+            {
+                title:"JavaScript",
+                image:"/logos/JavaScript.png",
+                frontContent:"I dont have as much expiriacne as I do with CSS and HTML but I feel like i lean something new every time I use it",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"language"
+            },
+            {
+                title:"Tailwind",
+                image:"/logos/Tailwind.png",
+                frontContent:"I have used Tailwind in some projects and I finde it easy an intuative to use",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"libary/plugins"
+            },
+            {
+                title:"Node.js",
+                image:"/logos/NodeJs.png",
+                frontContent:"Other then install NPM packages I have used it to make Rest APIs and AUTH systems",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"Other"
+            },
+            {
+                title:"Umbraco",
+                image:"/logos/umbraco.png",
+                frontContent:"When I worked for Generaxion I worked and I have made many websites in it",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"CMS"
+            },
+            {
+                title:"Drupal",
+                image:"/logos/Drupal.png",
+                frontContent:"I currently work at AUXO and we use Drupla, I have made a lot of websties using it",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"CMS"
+            },
+            {
+                title:"Bootstarp",
+                image:"/logos/Bootstrap.png",
+                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"libary/plugins"
+            },
+            {
+                title:"Github",
+                image:"/logos/github.png",
+                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"Other"
+            },
+            {
+                title:"Vue",
+                image:"/logos/Vue.png",
                 frontContent:"placeholder placeholder placeholder placeholder placeholder",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"framework"
             },
             {
-                title:"Html",
-                image:"/logos/HTML5.png",
+                title:"MongoDB",
+                image:"/logos/MongoDB.png",
                 frontContent:"placeholder placeholder placeholder placeholder placeholder",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
-                type:"language"
-            }
+                type:"Other"
+            },
+            {
+                title:"Photoshop",
+                image:"/logos/Photoshop.png",
+                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"Programs"
+            },
+            {
+                title:"Xd",
+                image:"/logos/XD.png",
+                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"Programs"
+            },
+            {
+                title:"Figma",
+                image:"/logos/Figma.png",
+                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"Programs"
+            },
+            {
+                title:"Pinia",
+                image:"/logos/Pinia.png",
+                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                type:"libary/plugins"
+            },
         ]
     }),
     actions:{
