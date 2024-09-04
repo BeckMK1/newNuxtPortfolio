@@ -1,12 +1,14 @@
 <template>
 	<div class="card">
-        <div class="frontSide">
-            <img :src="image" alt="">
-            <h3>{{ title }}</h3>
-            <p>{{ frontContent }}</p>
-        </div>
-        <div class="backSide">
-            <p>{{ backContent }}</p>
+        <div class="card-inner">
+            <div class="frontSide">
+                <img :src="image" alt="">
+                <h3>{{ title }}</h3>
+                <p>{{ frontContent }}</p>
+            </div>
+            <div class="backSide">
+                <p>{{ backContent }}</p>
+            </div>
         </div>
 	</div>
 </template>
@@ -20,9 +22,21 @@ const prosp = defineProps({
 </script>
 <style lang="scss" scoped>
     .card{
-        background-color: var(--secondaryBg);
-        border-radius: var(--radiusMd);
+        height: 250px;
+        width: 100%;
         padding: 1.5rem;
+        &-inner{
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        &:hover{
+           .card-inner{
+                transform: rotateY(180deg);
+            }
+        }
         img{
             height: 50px;
             justify-self: center;
@@ -30,13 +44,32 @@ const prosp = defineProps({
         .frontSide{
             display: grid;
             gap: 1rem;
-            grid-template-rows: 1fr 50px 1fr;
+            grid-template-rows: 50px fit-content(100%) 1fr;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            background-color: var(--secondaryBg);
+            border-radius: var(--radiusMd);
             h3{
                 text-align: center;
+                margin: 0;
             }
         }
         .backSide{
-            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            background-color: var(--secondaryBg);
+            border-radius: var(--radiusMd);
         }
     }
 </style>

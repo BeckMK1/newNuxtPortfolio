@@ -26,35 +26,35 @@ export const useGlStore = defineStore('glStore', {
                 title:"Nuxt",
                 image:"/logos/NuxtWhite.png",
                 frontContent:"This is my framework of choice and I builds most of my projects in it",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "Using Nuxt was a natural transition coming from Vue. I am a big fan of Nuxt's expansive feature set and it's many QOL fatures. I still have a lot to lean about Nuxt and there are many features I have not even touched yet but I alway look forward to learning more.",
                 type:"framework"
             },
             {
                 title:"HTML",
                 image:"/logos/HTML5.png",
                 frontContent:"Almost every project I make is a website so i have alot of expirance with HTML",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I have learned a lot over the years of using HTML from cool patterns to the ever expanding list of HTML tags. One of the biggest think I have leaned about HTML is not to think about it in isolation but to consider how it works togetter with CSS and JavaScript.",
                 type:"language"
             },
             {
                 title:"CSS",
                 image:"/logos/CSS3.png",
                 frontContent:"I have used CSS for many years now, from my own projects to other peoples codebases",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I see CSS as an ever expanding moutaint, there heigher you clime it the taller it grows. I feel like I have gotton pertty good at CSS over the years but I still have a lot to learn ",
                 type:"language"
             },
             {
                 title:"Sass",
                 image:"/logos/SASS.png",
                 frontContent:"I prefer SCSS over vanilla CSS and I use it for my on projects as well as for work",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "This is how I like to write CSS while alot of SASS features have been added to CSS over the years I still finde SASS's impamintaion to be better and more intuative.",
                 type:"libary/plugins"
             },
             {
                 title:"JavaScript",
                 image:"/logos/JavaScript.png",
                 frontContent:"I dont have as much expiriacne as I do with CSS and HTML but I feel like i lean something new every time I use it",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "Ah JavaScript. I like JS even whit it's wierd inconsistensies. I would not call my self an expert in JavaScript but I have yet to incounter an problem i could not slove.  ",
                 type:"language"
             },
             {
@@ -88,56 +88,56 @@ export const useGlStore = defineStore('glStore', {
             {
                 title:"Bootstarp",
                 image:"/logos/Bootstrap.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"I have used Bootstrap a lot for work so i have a good amout of experiance with it",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"libary/plugins"
             },
             {
                 title:"Github",
                 image:"/logos/github.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"I use GitHub to manage all of my personal projects",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"Other"
             },
             {
                 title:"Vue",
                 image:"/logos/Vue.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"This was the first JS framework I was interduced to and I have ueds it ever since",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"framework"
             },
             {
                 title:"MongoDB",
                 image:"/logos/MongoDB.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"I have used mongoDB of a data base for a cuple of projects now and I find it easy and intuative to use",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"Other"
             },
             {
                 title:"Photoshop",
                 image:"/logos/Photoshop.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"While I am no photoshop pro, I have used it a lot to edit images so they can better fit on a website",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"Programs"
             },
             {
                 title:"Xd",
                 image:"/logos/XD.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"This was the first mockup program I was interduced to and I have made many mockups in it",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"Programs"
             },
             {
                 title:"Figma",
                 image:"/logos/Figma.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"This is my mockup program of choise, because it is free and it has all the features I need ",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"Programs"
             },
             {
                 title:"Pinia",
                 image:"/logos/Pinia.png",
-                frontContent:"placeholder placeholder placeholder placeholder placeholder",
+                frontContent:"I use Pinia in most of my Vue/Nuxt projects as local storage",
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"libary/plugins"
             },
