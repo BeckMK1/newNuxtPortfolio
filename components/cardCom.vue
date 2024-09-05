@@ -1,5 +1,5 @@
 <template>
-	<div class="card">
+	<div class="card" @click="isflip = !isflip" :class="isflip == true ? 'flip' : ''">
         <div class="card-inner">
             <div class="frontSide">
                 <img :src="image" alt="">
@@ -19,12 +19,14 @@ const prosp = defineProps({
     frontContent:String,
     backContent:String
 })
+const isflip = ref(false)
 </script>
 <style lang="scss" scoped>
     .card{
         height: 250px;
         width: 100%;
         padding: 1.5rem;
+        cursor: pointer;
         &-inner{
             transition: transform 0.8s;
             transform-style: preserve-3d;
@@ -32,11 +34,15 @@ const prosp = defineProps({
             height: 100%;
             width: 100%;
         }
+        &.flip{
         &:hover{
            .card-inner{
-                transform: rotateY(180deg);
+                transform: rotateY(-180deg);
             }
         }
+        }
+
+
         img{
             height: 50px;
             justify-self: center;
