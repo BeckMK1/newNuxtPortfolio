@@ -141,6 +141,12 @@ export const useGlStore = defineStore('glStore', {
                 backContent: "placeholder placeholder placeholder placeholder placeholder",
                 type:"libary/plugins"
             },
+        ],
+        aboutMe:[
+            {
+                title:"Placeholder",
+                content:" placeholder placeholder placeholder placeholder",
+            }
         ]
     }),
     actions:{
