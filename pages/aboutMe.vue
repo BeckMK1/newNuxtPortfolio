@@ -6,7 +6,7 @@
         <div class="aboutMeContent" :id="content.title" v-for="content in glStore.aboutMe">
             <h3>{{ content.title }}</h3>
             <div class="content">
-                {{ content.content }}
+                <div v-html="content.content"></div>
             </div>
         </div>
     </div>

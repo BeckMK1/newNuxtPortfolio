@@ -144,8 +144,13 @@ export const useGlStore = defineStore('glStore', {
         ],
         aboutMe:[
             {
-                title:"Placeholder",
-                content:" placeholder placeholder placeholder placeholder",
+                title:"About Me",
+                content:` 
+                    <p>My name is Mikkel Beck Knudsen, I am 29 years old and I am educated in Multimedia design and Multimedia integration.</p>
+                    <p>I have always loved playing with computers, Most of that passion comes from my love of Video games, but since I started learning about programming my interesses has deepen to understand how computers and program work on a more fundamental level.</p>
+                    <p>I love complexity, and learning new things. This is most exemplified in the games and media I like.</p>
+                    <p>I often go for the stuff where you can dive deep, things you you can spend a 1000 hours plus on and still feel like you are just schering the surface.</p>
+                    <p>I am always looking for something new to learn, right now I am trying to learn GO-lang because I want to learn more languages and it looked like a good way to start.</p>`,
             }
         ]
     }),
