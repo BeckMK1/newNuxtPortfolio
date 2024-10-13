@@ -26,7 +26,7 @@ export const useGlStore = defineStore('glStore', {
                 title:"Nuxt",
                 image:"/logos/NuxtWhite.png",
                 frontContent:"This is my framework of choice and I builds most of my projects in it",
-                backContent: "Using Nuxt was a natural transition coming from Vue. I am a big fan of Nuxt's expansive feature set and it's many QOL fatures. I still have a lot to lean about Nuxt and there are many features I have not even touched yet but I alway look forward to learning more.",
+                backContent: "I have properly made around 15 projects using Nuxt. 1 of the projects was making a profile page for Wedio when I had my internship there. Most of my own web projects are build using Nuxt thees days.",
                 type:"framework"
             },
             {
@@ -40,7 +40,7 @@ export const useGlStore = defineStore('glStore', {
                 title:"CSS",
                 image:"/logos/CSS3.png",
                 frontContent:"I have used CSS for many years now, from my own projects to other peoples codebases",
-                backContent: "I see CSS as an ever expanding moutaint, there heigher you clime it the taller it grows. I feel like I have gotton pertty good at CSS over the years but I still have a lot to learn ",
+                backContent: "Of course  I have a lot of CSS experience since it is in every web project you could think of. So I have used in almost every project i have done since I started learning programming about 5 years ago.",
                 type:"language"
             },
             {
@@ -54,84 +54,84 @@ export const useGlStore = defineStore('glStore', {
                 title:"JavaScript",
                 image:"/logos/JavaScript.png",
                 frontContent:"I dont have as much expiriacne as I do with CSS and HTML but I feel like i lean something new every time I use it",
-                backContent: "Ah JavaScript. I like JS even whit it's wierd inconsistensies. I would not call my self an expert in JavaScript but I have yet to incounter an problem i could not slove.  ",
+                backContent: "JavaScript is the first programming language I really learn, if you don't consider HTML and CSS programming language. I have used it most my my project my now, but not as much as HTML and CSS ",
                 type:"language"
             },
             {
                 title:"Tailwind",
                 image:"/logos/Tailwind.png",
                 frontContent:"I have used Tailwind in some projects and I finde it easy an intuative to use",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I have only used Tailwind in my projects, and i vastly prefer it over Bootstrap. But I dont use it in every project as I don't find it to be too use full in smaller projects" ,
                 type:"libary/plugins"
             },
             {
                 title:"Node.js",
                 image:"/logos/NodeJs.png",
                 frontContent:"Other then install NPM packages I have used it to make Rest APIs and AUTH systems",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I have used Node.js to build my api of my most resent exam project, so I dont have the most amount of experience with it, but in the 3 weeks I had to build it I was able to learn how to do it and implement it  ",
                 type:"Other"
             },
             {
                 title:"Umbraco",
                 image:"/logos/umbraco.png",
                 frontContent:"When I worked for Generaxion I worked and I have made many websites in it",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I have made around 10 websites in Umbraco, and I learned a lot, most importantly not just how to make the websites but also how to make a good user experience for the customer when they them selves have to change the content on their website    ",
                 type:"CMS"
             },
             {
                 title:"Drupal",
                 image:"/logos/Drupal.png",
                 frontContent:"I currently work at AUXO and we use Drupla, I have made a lot of websties using it",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I have worked on or made properly over 100 websites In Drupal while I work at AUXO. And I think I can do most things I need to do in Drupal. ",
                 type:"CMS"
             },
             {
                 title:"Bootstarp",
                 image:"/logos/Bootstrap.png",
                 frontContent:"I have used Bootstrap a lot for work so i have a good amout of experiance with it",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I have used Bootstrap on many projects and I feel like I have a good understanding of how to use it. I am not the biggest fan of it and I dont use it in my own projects, but I have used it a lot for work.",
                 type:"libary/plugins"
             },
             {
                 title:"Github",
                 image:"/logos/github.png",
                 frontContent:"I use GitHub to manage all of my personal projects",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I use GitHub to store and manage all of my project's and I also used it for work when i worked at Wedio.",
                 type:"Other"
             },
             {
                 title:"Vue",
                 image:"/logos/Vue.png",
                 frontContent:"This was the first JS framework I was interduced to and I have ueds it ever since",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "While I mostly use Nuxt thees days, I still love vue and since Nuxt is build on Vue I always try to keep up with what is new in Vue. ",
                 type:"framework"
-            },
+            },  
             {
                 title:"MongoDB",
                 image:"/logos/MongoDB.png",
                 frontContent:"I have used mongoDB of a data base for a cuple of projects now and I find it easy and intuative to use",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "MongoDB was the first database i learned how to use, and it gave me a border interested for development outside of just websites  ",
                 type:"Other"
             },
             {
                 title:"Photoshop",
                 image:"/logos/Photoshop.png",
                 frontContent:"While I am no photoshop pro, I have used it a lot to edit images so they can better fit on a website",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "Most of the work i do in Photoshop is stuff like removing backgrounds from logos and expanding images to better fit on websites",
                 type:"Programs"
             },
             {
                 title:"Xd",
                 image:"/logos/XD.png",
                 frontContent:"This was the first mockup program I was interduced to and I have made many mockups in it",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "I manly used this when i was in school to design the layout of websites, but when i lost access to Adobe CC i switched to Figma",
                 type:"Programs"
             },
             {
                 title:"Figma",
                 image:"/logos/Figma.png",
                 frontContent:"This is my mockup program of choise, because it is free and it has all the features I need ",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "",
                 type:"Programs"
             },
             {
