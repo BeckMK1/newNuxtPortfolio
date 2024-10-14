@@ -24,6 +24,10 @@
     align-items: center;
     gap: 2rem;
 }
+.catagoriesContainer{
+    display: flex;
+    gap: 1rem;
+}
 .aboutMeContent{
     width: 80%;
     height: fit-content;

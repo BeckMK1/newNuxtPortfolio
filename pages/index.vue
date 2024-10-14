@@ -14,8 +14,8 @@
 const slides = ref([
 {
     image: "/images/slides/testImage1.jpg",
-    githubLink:"#",
-    webLink:"#",
+    githubLink:"",
+    webLink:"",
     projectId:"PreLobby",
     title:"Pre Lobby",
     content:'This is a project I made for my final examen.It a website were people can create lobbies for games. The goal was to make an alternative to the build-in matchmaking systems that exist in many videogames.',
@@ -32,8 +32,8 @@ const slides = ref([
 },
 {
     image: "/images/slides/testImage2.jpg",
-    githubLink:"#",
-    webLink:"#",
+    githubLink:"",
+    webLink:"",
     projectId:"DesignArchitects",
     title:"Design Architects",
     content:"This is a Project I made for my final examen. This project was mad over 3, 8 hour, days and the propose was to show what I can do under a short time limet.   ",
@@ -42,6 +42,23 @@ const slides = ref([
         "Fontawsome",
         "Firebase",
         "Scss"
+    ]
+
+},
+{
+    image: "/images/slides/testImage2.jpg",
+    githubLink:"",
+    webLink:"",
+    projectId:"Watchlist",
+    title:"Watchlist",
+    content:"This was a school project where I made a watchlist website, where people can make watchlist for themsleves or their friend group.",
+    tech:[
+        "Vue",
+        "Fontawsome",
+        "Firebase",
+        "Scss",
+        "Pinia",
+        "Open movie database api",
     ]
 
 },

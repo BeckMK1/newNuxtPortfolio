@@ -18,6 +18,15 @@ export const useGlStore = defineStore('glStore', {
                 title:'Design Architects',
                 id:"DesignArchitects",
                 content:`<p>This is a project i made as a part of my examen. It is am website for a fictional architect company.</p> <p>This project was more about design and being able to make a website for filling a list of requirements.</p> <p>I had 3 days to make it. The frontend I made in Nuxt and for the backend I used Firebase</p>`
+            },
+            {
+                title:"Watchlist",
+                id:"Watchlist",
+                content:`<p>This was a school project where I made a watchlist website, where people can make watchlist for themsleves or their friend group.</p>
+                <p>The project was made in Vue using Firebase as a backend, and the open movie database API to get data about the movies.</p>
+                <p>Uses could make a watchlist invite their friends, and add / or remove movies from the list.</p>
+                <p>The main of the reason for make this project was to get better at Vue and using third party APIs </p>`
+                
             }
         ],
         filteredProjects:[],
@@ -131,14 +140,14 @@ export const useGlStore = defineStore('glStore', {
                 title:"Figma",
                 image:"/logos/Figma.png",
                 frontContent:"This is my mockup program of choise, because it is free and it has all the features I need ",
-                backContent: "",
+                backContent: "When ever I have to make a mockup of something I use Figma, It has most om the tools I need and is free. I have properly made mockups for around 10 projects in it.",
                 type:"Programs"
             },
             {
                 title:"Pinia",
                 image:"/logos/Pinia.png",
                 frontContent:"I use Pinia in most of my Vue/Nuxt projects as local storage",
-                backContent: "placeholder placeholder placeholder placeholder placeholder",
+                backContent: "Since I learned about Pinia about 3 years ago I have used it in every Vue / Nuxt project. ",
                 type:"libary/plugins"
             },
         ],
@@ -151,6 +160,15 @@ export const useGlStore = defineStore('glStore', {
                     <p>I love complexity, and learning new things. This is most exemplified in the games and media I like.</p>
                     <p>I often go for the stuff where you can dive deep, things you you can spend a 1000 hours plus on and still feel like you are just schering the surface.</p>
                     <p>I am always looking for something new to learn, right now I am trying to learn GO-lang because I want to learn more languages and it looked like a good way to start.</p>`,
+            },
+            {
+                title:"Hobbies",
+                content:`<p>I spend most of my free time playing video games. Play a wide verity of games but som of my favorits are Dota 2, Path of exile, and Factorio. I have played dota since warcraft 3 and a few of years ago I started to get back in to it in a big way and even though I sometimes take breaks from it, I always return to it.</p>
+                <p>I have played Path of exile since it's 1.0 release back in 2013, it is my second most played game on steam after Dota 2. I am there for every new league and I am looking forward to Path of exile 2 which is coming out at the end of the year.</p>
+                <p>Factorio Is something I only got in to last year and I have os far spent around 500h in it and it is a game I always return to when I just want to chill.</p>
+                <p>I also code as a hobby but it is not something I do every day, it is more something I do when I get an idea that I want to build or when i want to learn something new.</p>
+                <p>The last thing in build was a blog website for my self since I have recently been wanting to write more.</p>
+                <p>I also love movies, I don't have an specific grener I like as long as it is good I will watch it. However I do love Sicfi whit my most reasent favorit being Dune part 2.</p>`
             }
         ]
     }),

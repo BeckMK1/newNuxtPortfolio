@@ -16,8 +16,8 @@
                         </div>
                         <div class="links">
                             <a class="projectLink" @mouseenter="isPause = true" @mouseleave="isPause = false" v-if="slide.githubLink != ''" :href="slide.githubLink"><font-awesome-icon icon="fa-brands fa-github" /></a>
-                            <a class="projectLink" @mouseenter="isPause = true"  @mouseleave="isPause = false" v-if="slide.githubLink != ''" :href="slide.webLink"><font-awesome-icon icon="fa-solid fa-globe" /></a>
-                            <div class="projectLink" @mouseenter="isPause = true" @mouseleave="isPause = false" v-if="slide.githubLink != ''" @click="goToProject(slide.projectId)"><font-awesome-icon icon="fa-solid fa-diagram-project" /></div>
+                            <a class="projectLink" @mouseenter="isPause = true"  @mouseleave="isPause = false" v-if="slide.webLink != ''" :href="slide.webLink"><font-awesome-icon icon="fa-solid fa-globe" /></a>
+                            <div class="projectLink" @mouseenter="isPause = true" @mouseleave="isPause = false" v-if="slide.projectId != ''" @click="goToProject(slide.projectId)"><font-awesome-icon icon="fa-solid fa-diagram-project" /></div>
                         </div>
                     </div>
                 </div>
