@@ -14,7 +14,7 @@
 const slides = ref([
 {
     image: "/images/slides/testImage1.jpg",
-    githubLink:"",
+    githubLink:"https://github.com/BeckMK1/GameLobbyApp",
     webLink:"",
     projectId:"PreLobby",
     title:"Pre Lobby",
@@ -33,7 +33,7 @@ const slides = ref([
 {
     image: "/images/slides/testImage2.jpg",
     githubLink:"",
-    webLink:"",
+    webLink:"https://github.com/BeckMK1/examen-3dags-",
     projectId:"DesignArchitects",
     title:"Design Architects",
     content:"This is a Project I made for my final examen. This project was mad over 3, 8 hour, days and the propose was to show what I can do under a short time limet.   ",
@@ -47,7 +47,7 @@ const slides = ref([
 },
 {
     image: "/images/slides/testImage2.jpg",
-    githubLink:"",
+    githubLink:"https://github.com/BeckMK1/VueMovieProject",
     webLink:"",
     projectId:"Watchlist",
     title:"Watchlist",
